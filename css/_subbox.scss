@@ -82,3 +82,19 @@
     .sub6 {
         @extend %sub;
     }
+    
+    @media only screen and (min-width:756px) {
+        .heade {
+            padding: 0 50px 50px 50px;
+        }
+        .subbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        %sub {
+            margin-top: 35px;
+            width: 350px;
+        }
+    }

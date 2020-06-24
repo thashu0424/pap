@@ -1,15 +1,16 @@
 @font-face {
     font-family: "papu";
-    src: url(../fonts/Montserrat-Bold.ttf);
+    src: url(../fonts/bold.ttf);
 }
 
-$fonts:"papu";
-$main-body:hsl(234, 14%, 74%);
-$lightest-blue:hsl(240, 78%, 98%);
-$grey-blue:hsl(233, 13%, 49%);
-$dark-blue:hsl(232, 13%, 33%);
-@mixin image() {
-    background-position: 100% 0%, 0% -525%;
-    background-repeat: no-repeat, no-repeat;
-    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+@font-face {
+    font-family: "papu1";
+    src: url(../fonts/reg.ttf);
 }
+
+$bold:"papu";
+$reg:"papu1";
+$dark-but:linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+$ball:hsl(228, 28%, 20%);
+$lite:hsl(230, 22%, 74%);
+$insta:linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
