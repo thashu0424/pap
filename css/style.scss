@@ -1,0 +1,27 @@
+    @import 'config';
+    @import 'default';
+    @import 'swit';
+    @import 'box1';
+    body {
+        @include image();
+    }
+    
+    body {
+        background-color: $lightest-blue;
+    }
+    
+    .top-page {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 5rem;
+        text-align: center;
+        .toggle {
+            padding-top: 3rem;
+            display: flex;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #4a4b46;
+        }
+    }

@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -7,32 +13,16 @@
     color: hsl(228, 45%, 44%);
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-html {
-    min-height: 100%;
-}
-
+html,
 body {
-    margin: 0;
-    line-height: 1.8rem;
-    background-color: hsl(230, 17%, 14%);
-    min-height: 100%;
+    overflow: hidden;
+    height: 100%;
+    font-family: $fonts;
 }
 
 .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 28px 0 28px;
     height: 100%;
-    bottom: 60px;
-}
-
-img {
-    width: 100%;
-    height: auto;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: hidden;
 }

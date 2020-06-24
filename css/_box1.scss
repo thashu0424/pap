@@ -1,0 +1,91 @@
+    %box {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+        width: 20%;
+        height: 75%;
+        text-align: center;
+        ul {
+            height: 100%;
+        }
+        h3 {
+            color: grey;
+            padding-top: 20px;
+        }
+        li {
+            list-style: none;
+        }
+        %pad {
+            padding: 16px 16px;
+        }
+        li:nth-child(1) {
+            color: #4a4b46;
+            font-size: 4vw;
+            @extend %pad;
+        }
+        li:nth-child(3),
+        li:nth-child(5),
+        li:nth-child(7),
+        li:nth-child(9) {
+            color: grey;
+            p {
+                font-size: 90%;
+            }
+            @extend %pad;
+        }
+        li:nth-child(9) {
+            height: 100%;
+            padding-top: 30px;
+            button {
+                color: hsl(237, 63%, 64%);
+                background-color: inherit;
+                border: solid 1px grey;
+                border-radius: 10px;
+                font-family: inherit;
+                font-size: 0.8rem;
+                width: 90%;
+                height: 12%;
+                outline: none;
+            }
+        }
+        hr {
+            color: grey;
+            margin: 0 auto;
+            border-style: solid none none none;
+            border-width: 1px;
+            width: 80%;
+        }
+    }
+    
+    .boxes {
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box1 {
+            @extend %box;
+            border-radius: 15px 0px 0px 15px;
+        }
+        .box2 {
+            color: white;
+            background-color: hsl(237, 63%, 64%);
+            height: 85%;
+            @extend %box;
+            border-radius: 15px;
+            h3,
+            ul>li>p,
+            li:nth-child(9)>button,
+            hr {
+                color: white;
+            }
+            li:nth-child(9)>button {
+                border: solid 1px white;
+            }
+            h3 {
+                padding-top: 45px;
+            }
+        }
+        .box3 {
+            @extend %box;
+            border-radius: 0px 15px 15px 0px;
+        }
+    }
