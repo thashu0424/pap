@@ -1,0 +1,84 @@
+    .subbox {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .heade {
+        h1 {
+            font-family: $bold;
+            color: white;
+        }
+    }
+    
+    %sub {
+        margin-top: 20px;
+        background-color: hsl(228, 28%, 20%);
+        height: 165px;
+        border-radius: 5px;
+        padding-bottom: 175px;
+        .maall {
+            margin: 10px 25px 25px 10px;
+            padding-left: 20px;
+        }
+        .mele {
+            display: flex;
+            p {
+                font-family: $bold;
+                color: hsl(228, 34%, 66%);
+            }
+            img {
+                margin-top: 10px;
+                margin-left: auto;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .kelage {
+            display: flex;
+            .vi {
+                font-size: 50px;
+                font-family: $bold;
+                color: white;
+            }
+            .upu {
+                display: flex;
+                margin-left: auto;
+                margin-top: 40px;
+                img {
+                    margin-top: 25px;
+                    height: 10px;
+                    width: 15px;
+                    margin-right: 5px;
+                }
+                p {
+                    font-family: $bold;
+                    color: hsl(163, 72%, 41%);
+                }
+            }
+        }
+    }
+    
+    .sub1 {
+        @extend %sub;
+    }
+    
+    .sub2,
+    .sub7,
+    .sub8 {
+        @extend %sub;
+        .kelage {
+            .upu {
+                p {
+                    color: hsl(356, 69%, 56%);
+                }
+            }
+        }
+    }
+    
+    .sub3,
+    .sub4,
+    .sub5,
+    .sub6 {
+        @extend %sub;
+    }
